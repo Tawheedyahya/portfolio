@@ -1,0 +1,273 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family:'popins';
+}
+:root
+{
+    --background-color: rgb(24, 24,24);
+    --second-background-color:rgb(21,21,21)
+}
+body{
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2em 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(15, 15, 15,0.8);
+    backdrop-filter: blur(10px) ;
+    z-index: 1000;
+
+}
+ul{
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+nav ul a{
+    color: white;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+}
+nav ul a:hover{
+    opacity: 1;
+}
+.logo{
+    font-size: 2em;
+    color: white;
+    font-weight: 800;
+    opacity: 0.8;
+    transition: 0.2 ease-in-out;
+}
+.logo:hover{
+    opacity: 1;
+}
+.btn{
+    padding: 0.5em 1em;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    border: 2px solid white;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: var(--second-background-color);
+}
+span{
+    background: linear-gradient(to right,#6cff52,#3ec5ff);
+    background-clip: text;
+    color: transparent;
+}
+#menu{
+    color: white;
+    font-size: 3em;
+    display: none;
+
+}
+/*SECTION DESIGN*/
+section{
+    min-height: 100vh;
+    padding: 5% 15%;
+}
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+}
+#home img{
+width: 25vw;
+margin-top: 3em;
+border-radius: 50%;
+}
+.info-box{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+    max-width: 600px;
+}
+.info-box h1{
+    font-size: 5em;
+    font-weight: 500;
+}
+.info-box h3{
+    font-size: 2em;
+    font-weight: 400;
+}
+.info-box p{
+    opacity: 0.7;
+}
+.btn-box{
+    display: flex;
+    gap: 1em;
+}
+.btn-box .btn:nth-child(2){
+    background-color: white;
+    color: var(--background-color);
+}
+.btn-box .btn:nth-child(2):hover{
+    background-color: var(--background-color);
+    color: white;
+
+}
+::-webkit-scrollbar{
+    width: 20px;
+    background-color: var(--background-color);
+
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom,#6cff52,#3ec5ff);
+}
+/*FINISH OF HOME*/
+
+/* ABOUT */
+#about{
+    background-color: var(--second-background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+#about img{
+    width: 40vw;
+    border-radius: 1em;
+}
+.about-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2em;
+
+}
+.about-box h1{
+    font-size: 5em;
+
+}
+.about-box p{
+    color: white;
+    opacity: 0.8;
+}
+
+.skills{
+    display: flex;
+    text-align: left;
+    gap: 10em;
+}
+.skills ul{
+    font-size: 1.3em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    opacity: 0.8;
+    align-items: baseline;
+}
+.skills ul li span{
+    display: flex;
+    gap: 0.5em;
+    font-size: 1.2em;
+    transition: 0.3s ease-in-out;
+}
+.skills ul li i{
+    font-size: 1.2em;
+
+}
+.about-box h2{
+    font-size: 2.5em;
+    
+}
+/* qualification*/
+#qualification{
+    min-height: 100
+}
+
+#qualification h4{
+    background: linear-gradient(to right,#6cff52,#3ec5ff);
+    background-clip: text;
+    color: transparent;
+    padding-bottom: 20px;
+    font-size: 3em;
+}
+#qualification table{
+    padding: 20px;
+    background-color: white;
+    border-collapse: collapse;
+
+}
+
+#qualification table,th,td{
+    border: 1px solid black;
+    padding: 0.5em;
+}
+#qualification table  td{
+    font-size: 1.5em;
+    padding-left: 20px;
+}
+#qualification table th{
+    font-size: 2em;
+}
+.sch img{
+    height: 200px;
+    width: auto;
+    border-radius: 100%;
+    position: relative;
+    left: 190px;
+
+}
+.college p{
+   margin-top: 20px;
+   background: linear-gradient(#6cff52,#3ec5ff);
+   background-clip: text;
+   color: transparent;
+   font-size: 2em;
+}
+.college h4{
+    margin-top: 20px;
+}
+#contact{
+    background-color: var(--second-background-color);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+}
+form .input-box{
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 1em;
+}
+form input{
+    font-size: 1.3em;
+    padding: 1em 5em;
+    border-radius: 0.5em;
+    border: none;
+    outline: none;
+
+}
+form span{
+    font-size: 1.5em;
+    padding-top: 10px;
+}
+form input:focus{
+    background-color: rgb(229,229,229);
+}
