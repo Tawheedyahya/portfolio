@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tawheed Yahya J | Software Developer</title>
+
+  <meta name="description" content="Portfolio of Tawheed Yahya J — Software Developer (PHP/Laravel). SaaS, APIs, AWS, DevOps interests." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- <link rel="stylesheet" href="styles.css" />
+    -->
+  <link rel="stylesheet" href="./portfolio.css">
+  <script src="./portfolio.js" defer></script>
+</head>
+<body>
+  <!-- Background effects -->
+  <div class="bg-orb orb-1" aria-hidden="true"></div>
+  <div class="bg-orb orb-2" aria-hidden="true"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+
+  <!-- Top progress bar -->
+  <div class="scroll-progress" aria-hidden="true">
+    <div class="scroll-progress__bar" id="scrollBar"></div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="top">
+    <div class="container header__wrap">
+      <a class="brand" href="#top" aria-label="Go to top">
+        <span class="brand__dot"></span>
+        <span class="brand__text">Tawheed</span>
+      </a>
+
+      <nav class="nav" aria-label="Primary">
+        <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <ul class="nav__list" id="navList">
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#experience">Experience</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#education">Education</a></li>
+          <li><a class="nav__link" href="#profiles">Profiles</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header__actions">
+        <button class="btn btn--ghost" id="themeToggle" aria-label="Toggle theme">
+          <span class="icon" aria-hidden="true">☾</span>
+          <span class="btn__text">Theme</span>
+        </button>
+        <a class="btn btn--primary" href="tawheed_yahya_developer.pdf" target="_blank" rel="noopener">
+          Download Resume
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <main>
+    <section class="hero">
+      <div class="container hero__wrap">
+        <div class="hero__content reveal">
+          <p class="pill">
+            <span class="pulse" aria-hidden="true"></span>
+            Available for opportunities
+          </p>
+
+          <h1 class="hero__title">
+            Hi, I'm <span class="accent">Tawheed Yahya J</span><br/>
+            <span class="typing-wrap">
+              <span id="typing" class="typing"></span>
+              <span class="caret" aria-hidden="true"></span>
+            </span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Detail-oriented <strong>PHP/Laravel</strong> developer building scalable SaaS systems,
+            REST integrations, email queues, and cloud deployments.
+          </p>
+
+          <div class="hero__cta">
+            <a class="btn btn--primary" href="#contact">Hire / Contact</a>
+            <a class="btn btn--ghost" href="#experience">View Experience</a>
+          </div>
+
+          <div class="hero__stats">
+            <div class="stat card reveal" data-delay="80">
+              <div class="stat__num" data-counter="1">0</div>
+              <div class="stat__label">Current Role</div>
+            </div>
+            <div class="stat card reveal" data-delay="140">
+              <div class="stat__num" data-counter="2">0</div>
+              <div class="stat__label">Key Projects</div>
+            </div>
+            <div class="stat card reveal" data-delay="200">
+              <div class="stat__num" data-counter="6">0</div>
+              <div class="stat__label">Core Skill Areas</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__card card reveal" data-delay="120">
+          <div class="hero__cardTop">
+            <div class="avatar" aria-hidden="true">
+              <span>TY</span>
+            </div>
+            <div>
+              <h2 class="hero__cardTitle">Software Developer</h2>
+              <p class="muted">PHP / Laravel • REST APIs • AWS</p>
+            </div>
+          </div>
+
+          <div class="hero__cardBody">
+            <div class="chip-row">
+              <span class="chip">Laravel</span>
+              <span class="chip">Queues</span>
+              <span class="chip">MySQL</span>
+              <span class="chip">AWS EC2</span>
+              <span class="chip">Docker (Basic)</span>
+              <span class="chip">Linux</span>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="quick">
+              <a class="quick__item" href="mailto:tawheedyahya0@gmail.com">
+                <span class="quick__k">Email</span>
+                <span class="quick__v">tawheedyahya0@gmail.com</span>
+              </a>
+              <a class="quick__item" href="tel:+919994780436">
+                <span class="quick__k">Phone</span>
+                <span class="quick__v">+91 99947 80436</span>
+              </a>
+              <a class="quick__item" href="https://www.linkedin.com/in/tawheed-yahya-a400b2292" target="_blank" rel="noopener">
+                <span class="quick__k">LinkedIn</span>
+                <span class="quick__v">View profile</span>
+              </a>
+              <a class="quick__item" href="https://leetcode.com/u/Jgx3HcCqnj/" target="_blank" rel="noopener">
+                <span class="quick__k">LeetCode</span>
+                <span class="quick__v">Problem solving</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="hero__cardGlow" aria-hidden="true"></div>
+        </div>
+      </div>
+
+      <a class="scrollHint" href="#about" aria-label="Scroll down">
+        <span class="scrollHint__dot" aria-hidden="true"></span>
+        <span class="scrollHint__text">Scroll</span>
+      </a>
+    </section>
+
+    <!-- About -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">About</h2>
+          <p class="section__desc">
+            I build secure, scalable web applications with a strong backend focus — SaaS, APIs, queues, and cloud deployment.
+          </p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card pad reveal">
+            <h3 class="card__title">Professional Summary</h3>
+            <p class="muted">
+              Detail-oriented PHP/Laravel Web Developer experienced in SaaS product development and full-stack web applications.
+              Strong proficiency in backend development, REST API integration, email queue processing, and AWS deployment.
+              Interested in DevOps and cloud computing with focus on scalable, secure systems.
+            </p>
+            <div class="divider"></div>
+            <div class="list">
+              <div class="list__item">Backend-first Laravel development</div>
+              <div class="list__item">REST APIs & tax submission workflows</div>
+              <div class="list__item">Queues for async email delivery</div>
+              <div class="list__item">AWS EC2 deployments & Git workflows</div>
+            </div>
+          </div>
+
+          <div class="card pad reveal" data-delay="120">
+            <h3 class="card__title">Core Strengths</h3>
+            <div class="skillBars">
+              <div class="bar">
+                <div class="bar__top">
+                  <span>Laravel & Backend</span><span class="muted">90%</span>
+                </div>
+                <div class="bar__track"><div class="bar__fill" style="--w:90%"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__top">
+                  <span>REST API Integration</span><span class="muted">85%</span>
+                </div>
+                <div class="bar__track"><div class="bar__fill" style="--w:85%"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__top">
+                  <span>Databases (MySQL/SQL)</span><span class="muted">80%</span>
+                </div>
+                <div class="bar__track"><div class="bar__fill" style="--w:80%"></div></div>
+              </div>
+              <div class="bar">
+                <div class="bar__top">
+                  <span>AWS / Deployment</span><span class="muted">75%</span>
+                </div>
+                <div class="bar__track"><div class="bar__fill" style="--w:75%"></div></div>
+              </div>
+            </div>
+
+            <div class="divider"></div>
+
+            <div class="miniCards">
+              <div class="mini card">
+                <div class="mini__k">Tools</div>
+                <div class="mini__v">Git • AWS EC2 • Linux</div>
+              </div>
+              <div class="mini card">
+                <div class="mini__k">Learning</div>
+                <div class="mini__v">DevOps • Cloud • Networking</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Experience</h2>
+          <p class="section__desc">Real work: SaaS invoice systems, portals, deployment, and performance improvements.</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline__item card pad reveal">
+            <div class="timeline__meta">
+              <div>
+                <h3 class="timeline__title">Junior Developer</h3>
+                <p class="muted">Soul Creationz — Malaysia</p>
+              </div>
+              <div class="timeline__date">Aug 2025 – Present</div>
+            </div>
+
+            <div class="timeline__blocks">
+              <div class="project">
+                <h4 class="project__title">SaaS Invoice Management System</h4>
+                <ul class="bullets">
+                  <li>Developed and enhanced a multi-tenant SaaS invoice application using Laravel.</li>
+                  <li>Implemented asynchronous SMTP email processing using Laravel Queues.</li>
+                  <li>Integrated REST APIs with LHDN (Malaysia Tax Authority) for tax submission and validation.</li>
+                  <li>Improved performance, reliability, and scalability through backend optimization.</li>
+                </ul>
+              </div>
+
+              <div class="project">
+                <h4 class="project__title">Event Vendors Management Portal</h4>
+                <ul class="bullets">
+                  <li>Built a complete vendor management web platform for event-based businesses.</li>
+                  <li>Developed UI components with DataTables.js, Select2, jQuery, and jQuery Validator.</li>
+                  <li>Managed backend workflows including authentication, reporting, and operations.</li>
+                  <li>Deployed on AWS EC2 and managed version control using Git.</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <div class="note card pad reveal" data-delay="120">
+          <div class="note__icon" aria-hidden="true">⚡</div>
+          <div>
+            <div class="note__title">What I enjoy</div>
+            <div class="muted">Building clean backend architecture, automations (queues), and cloud-ready deployments.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Skills</h2>
+          <p class="section__desc">A practical stack focused on backend performance and reliable delivery.</p>
+        </div>
+
+        <div class="cards-3">
+          <div class="card pad reveal">
+            <h3 class="card__title">Languages</h3>
+            <div class="chip-row">
+              <span class="chip">PHP</span>
+              <span class="chip">JavaScript</span>
+              <span class="chip">Python</span>
+            </div>
+          </div>
+
+          <div class="card pad reveal" data-delay="90">
+            <h3 class="card__title">Frameworks & Libraries</h3>
+            <div class="chip-row">
+              <span class="chip">Laravel</span>
+              <span class="chip">jQuery</span>
+              <span class="chip">Bootstrap</span>
+              <span class="chip">React.js (Basic)</span>
+              <span class="chip">DataTables.js</span>
+              <span class="chip">Select2</span>
+            </div>
+          </div>
+
+          <div class="card pad reveal" data-delay="140">
+            <h3 class="card__title">Platforms & Tools</h3>
+            <div class="chip-row">
+              <span class="chip">AWS EC2</span>
+              <span class="chip">Git</span>
+              <span class="chip">Linux</span>
+              <span class="chip">Docker (Basic)</span>
+              <span class="chip">REST APIs</span>
+              <span class="chip">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pad reveal" data-delay="180">
+          <h3 class="card__title">Professional Skills</h3>
+          <div class="list list--cols">
+            <div class="list__item">Strong communication</div>
+            <div class="list__item">Team collaboration</div>
+            <div class="list__item">Curious learner</div>
+            <div class="list__item">Problem-solving & debugging</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Education</h2>
+          <p class="section__desc">Academic background in Computer Science.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card pad reveal">
+            <h3 class="card__title">Bachelor of Computer Science</h3>
+            <p class="muted">Government Arts College (Autonomous), Coimbatore</p>
+            <div class="row">
+              <span class="badge">2022 – 2025</span>
+              <span class="badge">CGPA: 8.2 / 10</span>
+            </div>
+          </div>
+
+          <div class="card pad reveal" data-delay="90">
+            <h3 class="card__title">Higher Secondary (Computer Science)</h3>
+            <p class="muted">Sharon Matriculation School, Thoothukudi</p>
+            <div class="row">
+              <span class="badge">2020 – 2022</span>
+              <span class="badge">85.33%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profiles -->
+    <section class="section" id="profiles">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Coding Profiles</h2>
+          <p class="section__desc">Links to my professional and problem-solving profiles.</p>
+        </div>
+
+        <div class="grid-2">
+          <a class="card pad hover reveal" href="https://www.linkedin.com/in/tawheed-yahya-a400b2292" target="_blank" rel="noopener">
+            <div class="card__k">LinkedIn</div>
+            <div class="card__v">Connect and view experience</div>
+            <div class="card__arrow" aria-hidden="true">→</div>
+          </a>
+
+          <a class="card pad hover reveal" data-delay="90" href="https://leetcode.com/u/Jgx3HcCqnj/" target="_blank" rel="noopener">
+            <div class="card__k">LeetCode</div>
+            <div class="card__v">Competitive programming practice</div>
+            <div class="card__arrow" aria-hidden="true">→</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <h2 class="section__title">Contact</h2>
+          <p class="section__desc">Want to hire me or collaborate? Send a message.</p>
+        </div>
+
+        <div class="grid-2">
+          <div class="card pad reveal">
+            <h3 class="card__title">Direct</h3>
+            <div class="contactList">
+              <a class="contactList__item" href="mailto:tawheedyahya0@gmail.com">
+                <span class="contactList__k">Email</span>
+                <span class="contactList__v">tawheedyahya0@gmail.com</span>
+              </a>
+              <a class="contactList__item" href="tel:+919994780436">
+                <span class="contactList__k">Phone</span>
+                <span class="contactList__v">+91 99947 80436</span>
+              </a>
+              <a class="contactList__item" href="tawheed_yahya_developer.pdf" target="_blank" rel="noopener">
+                <span class="contactList__k">Resume</span>
+                <span class="contactList__v">Open PDF</span>
+              </a>
+            </div>
+
+            <div class="divider"></div>
+
+            <p class="muted">
+              Prefer WhatsApp? Use the phone number above (add country code).
+            </p>
+          </div>
+
+          <form class="card pad reveal" data-delay="90" id="contactForm">
+            <h3 class="card__title">Message</h3>
+
+            <label class="field">
+              <span>Name</span>
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label class="field">
+              <span>Email</span>
+              <input type="email" name="email" placeholder="you@email.com" required />
+            </label>
+
+            <label class="field">
+              <span>Message</span>
+              <textarea name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+            </label>
+
+            <button class="btn btn--primary" type="submit">
+              Send (opens email)
+            </button>
+
+            <!-- <p class="muted small" id="formHint">
+              This form opens your email app (no backend needed).
+            </p> -->
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer__wrap">
+      <div class="muted">
+        © <span id="year"></span> Tawheed Yahya J • Built with HTML/CSS/JS
+      </div>
+
+      <a class="toTop" href="#top" aria-label="Back to top">
+        ↑
+      </a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
